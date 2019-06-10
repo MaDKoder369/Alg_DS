@@ -27,12 +27,12 @@ public class BTreeTest
      // Node n = mytree.getRoot();
      
       System.out.println("preorderTraversal");
-      //mytree.preorderTraversal(  mytree.getRoot() );
+      mytree.preorderTraversal(  mytree.getRoot() );
       
-      System.out.println("postorderTraversal");
+      //System.out.println("postorderTraversal");
       //mytree.postorderTraversal(  mytree.getRoot() );
       
-      System.out.println("inorderTraversal");
+      //System.out.println("inorderTraversal");
       //mytree.inorderTraversal(  mytree.getRoot() );
       
       
@@ -41,15 +41,19 @@ public class BTreeTest
       
       System.out.println("CountNodes: " + mytree.GetCount() + "\n");
       
-      int [] arr = new int[100];
-      int [] arrMode = new int[100];
+      int [] arr = new int[10];
+      int [] arrMode = new int[10];
 
       arr = mytree.BTreeToArr();
-      //PrintArr(arrMode);
-      ArrUtl.AllModeCalc(arr,arrMode);
-     // PrintArr(arrMode);
+      //ArrUtl.PrintArrwithoutZero(arr);
       
-      System.out.println("Test BTree Ended");
+      //System.out.println("################## arrMode Started");
+     // ArrUtl.AllModeCalc(arr,arrMode);
+      //System.out.println("arrMode length: " + arrMode.length + "\n");
+      
+     // ArrUtl.PrintArrwithoutZero(arrMode);
+      
+      //System.out.println("Test BTree Ended");
       
    }
    

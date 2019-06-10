@@ -23,10 +23,10 @@ public class ArrUtlTest
         arr[1] = 1;
         arr[5] = 5;
         arr[6] = 5;
-        PrintArr(arr);
+        ArrUtl.PrintArrwithoutZero(arr);
         
         ArrUtl.AllModeCalc(arr,arrMode);
-        PrintArr(arrMode);
+        ArrUtl.PrintArrwithoutZero(arrMode);
         
         assertTrue( true );
     }
@@ -40,4 +40,5 @@ public class ArrUtlTest
          System.out.println("Array contain: " + i + "\n");
       }
    }
+   
 }

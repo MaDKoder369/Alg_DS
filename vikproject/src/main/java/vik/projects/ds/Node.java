@@ -23,13 +23,13 @@ public class Node
       right = nd.right;
    }
 
-   Node getLeft()
+   public Node getLeft()
    {
       //System.out.println("getLeft");
       return left;
    }
 
-   Node getRight()
+   public Node getRight()
    {
       //System.out.println("getRight");
       return right;

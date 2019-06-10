@@ -6,6 +6,8 @@ public class ArrUtl
 {
    public static void AllModeCalc(int[] numRead, int[] mode)
    {
+      System.out.println("AllModeCalc function!");
+      
       int prev = 0;
       int j = 0;
 
@@ -18,13 +20,52 @@ public class ArrUtl
             j++;
          }
       }
+      System.out.println("test##### function!");
+     PrintArrwithoutZero(mode); 
    }
    
+   public static boolean FindValueUnsorted(int [] arr, int val)
+   {
+       for ( int i : arr)
+       {
+           if(val == i)
+           {
+               return true;
+           }
+       }
+       
+       return false;
+       
+   }
+
    public static int ModeCalc(int[] numRead)
    {
       int prev = 0;
       int j = 0;
       
       return j;
+   }
+   
+   public static void PrintArrwithoutZero(int [] arr)
+   {
+      System.out.println("PrintArrwithoutZero function!");
+
+      for(int i : arr)
+      {
+         if(i != 0)
+         {
+            System.out.println("Array contain: " + i + "\n");
+         }
+      }
+   }
+   
+   public static void PrintArr(int [] arr)
+   {
+      System.out.println("PrintArr function!");
+
+      for(int i : arr)
+      {
+         System.out.println("Array contain: " + i + "\n");
+      }
    }
 }
