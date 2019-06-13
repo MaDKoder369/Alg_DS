@@ -17,5 +17,12 @@ public class StrUtlTest
 		char[] stringToCharArray = testString.toCharArray();
 
         assertTrue( StrUtl.AllUniqChr(stringToCharArray) );
+        
+        System.out.println("TEST STRING PERMUTATION\n");
+
+        String testString1 = "ThisIsTest";
+        String testString2 = "tseTsIsihT";
+        
+        assertTrue( StrUtl.isStrPermuted(testString1,testString2) );
     }
 }
