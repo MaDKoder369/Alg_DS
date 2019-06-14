@@ -14,9 +14,8 @@ public class StrUtlTest
         System.out.println("TEST UNIQ VALUE\n");
 
         String testString = "This Is Test";
-		char[] stringToCharArray = testString.toCharArray();
 
-        assertTrue( StrUtl.AllUniqChr(stringToCharArray) );
+        assertTrue( StrUtl.AllUniqChr(testString) );
         
         System.out.println("TEST STRING PERMUTATION\n");
 
