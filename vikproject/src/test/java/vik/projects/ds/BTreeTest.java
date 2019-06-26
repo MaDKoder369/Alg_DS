@@ -22,37 +22,37 @@ public class BTreeTest
       mytree.insert_node(10);
       mytree.insert_node(14);
       
-      System.out.println(" tree height: " + mytree.treeHeight( mytree.getRoot() ) );
+      //System.out.println(" tree height: " + mytree.treeHeight( mytree.getRoot() ) );
       
      // Node n = mytree.getRoot();
      
-      System.out.println("preorderTraversal");
+     // System.out.println("preorderTraversal");
       //mytree.preorderTraversal(  mytree.getRoot() );
       
-      System.out.println("postorderTraversal");
+      //System.out.println("postorderTraversal");
       //mytree.postorderTraversal(  mytree.getRoot() );
       
-      System.out.println("inorderTraversal");
+      //System.out.println("inorderTraversal");
       //mytree.inorderTraversal(  mytree.getRoot() );
       
       
       Node n = mytree.findLowestCommonAncestor(  mytree.getRoot(), 4, 14 );
       //System.out.println("findLowestCommonAncestor: " + n.getData() + "\n");
       
-      System.out.println("CountNodes: " + mytree.GetCount() + "\n");
+      //System.out.println("CountNodes: " + mytree.GetCount() + "\n");
       
       int [] arr = new int[100];
       int [] arrMode = new int[100];
 
       arr = mytree.BTreeToArr();
-      System.out.println("BTreeToArr \n");
+     // System.out.println("BTreeToArr \n");
       //ArrUtl.PrintArr(arr);
       
       //ArrUtl.AllModeCalc(arr,arrMode);
-      System.out.println("AllModeCalc \n");
+      //System.out.println("AllModeCalc \n");
       //ArrUtl.PrintArr(arrMode);
       
-      System.out.println("Test BTree Ended");
+     // System.out.println("Test BTree Ended");
       
    }
    
