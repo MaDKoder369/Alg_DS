@@ -51,16 +51,11 @@ public class StrUtlTest
         assertTrue(StrUtl.OneAway("pale","bale") );
         assertFalse(StrUtl.OneAway("pale","bake") );
         
-        //System.out.println("TEST FINDSUBSTR\n");
-        
-        //String subStr1 = "ThisIs";
-        //String subStr2 = "Thisds";
-        //int result = -2;
-        
-        //result = StrUtl.FindSubStr(testString1.toCharArray(), subStr1.toCharArray(),0,0 );
-        //System.out.println("TEST FINDSUBSTR result: " + result + "\n");
 
-        //result = StrUtl.FindSubStr(testString1.toCharArray(), subStr2.toCharArray(),0,0 );
-        //System.out.println("TEST FINDSUBSTR result: " + result + "\n");
+        System.out.println("TEST COMPRESSSTR\n");
+        String testString4 = "Mraaaaityyyity";
+        StrUtl.CompressStr(testString4);
+        
+
     }
 }
