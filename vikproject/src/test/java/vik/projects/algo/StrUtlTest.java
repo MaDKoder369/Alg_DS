@@ -42,5 +42,25 @@ public class StrUtlTest
         
         String testString3 = "Mr John Smith   ";
         StrUtl.URLify(testString3,13);
+        
+        
+        System.out.println("TEST ONEAWAY\n");
+        
+        assertTrue(StrUtl.OneAway("pale","ple") );
+        assertTrue(StrUtl.OneAway("pales","pale") );
+        assertTrue(StrUtl.OneAway("pale","bale") );
+        assertFalse(StrUtl.OneAway("pale","bake") );
+        
+        //System.out.println("TEST FINDSUBSTR\n");
+        
+        //String subStr1 = "ThisIs";
+        //String subStr2 = "Thisds";
+        //int result = -2;
+        
+        //result = StrUtl.FindSubStr(testString1.toCharArray(), subStr1.toCharArray(),0,0 );
+        //System.out.println("TEST FINDSUBSTR result: " + result + "\n");
+
+        //result = StrUtl.FindSubStr(testString1.toCharArray(), subStr2.toCharArray(),0,0 );
+        //System.out.println("TEST FINDSUBSTR result: " + result + "\n");
     }
 }
