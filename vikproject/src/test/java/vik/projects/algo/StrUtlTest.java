@@ -53,7 +53,7 @@ public class StrUtlTest
         
 
         System.out.println("TEST COMPRESSSTR\n");
-        String testString4 = "Mraaaaityyyity";
+        String testString4 = "aabcccccaaa";
         StrUtl.CompressStr(testString4);
         
 
