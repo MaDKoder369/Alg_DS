@@ -1,9 +1,10 @@
+vik\projects\log\Log.class
 vik\projects\ds\App.class
 vik\projects\alg\StrUtl.class
 vik\projects\alg\ArrUtl.class
-vik\projects\ds\FlexArray.class
 vik\projects\ds\Node.class
 vik\projects\ds\BTree.class
 vik\projects\ds\LList.class
 vik\projects\ds\LlNode.class
+vik\projects\tasks\CCI.class
 vik\projects\alg\TreeAlg.class

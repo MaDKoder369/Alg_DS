@@ -1,9 +1,10 @@
 package vik.projects.ds;
 
 import vik.projects.ds.LlNode;
+import vik.projects.log.Log;
 
 
-class LList
+public class LList
 {
 	private LlNode head;
 
