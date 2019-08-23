@@ -12,24 +12,24 @@ class LlNode
    // LlNode constructor
    LlNode(Object datavl)
    {
-       next = null;
-       data = datavl;
+      next = null;
+      data = datavl;
    }
 
    public LlNode(Object dataValue, LlNode nextValue) 
    {
       next = nextValue;
-	  data = dataValue;
+	   data = dataValue;
    }
 
    Object GetData()
    {
-       return data;
+      return data;
    }
 
    LlNode GetNext()
    {
-       return next;
+      return next;
    }
 
    public void setData(Object dataValue) 
@@ -39,7 +39,7 @@ class LlNode
 
    void SetNext(LlNode nextLlNode)
    {
-       next = nextLlNode;
+      next = nextLlNode;
    }
 
 }
