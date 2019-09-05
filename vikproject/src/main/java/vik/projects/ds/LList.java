@@ -184,4 +184,39 @@ public class LList
          }
       }
    }
+   
+   public void Partition()
+   {
+      LlNode crnN = head.GetNext();
+       
+   
+   }
+   
+   public void SumLists()
+   {
+      LlNode crnN = head.GetNext();
+       
+   
+   }
+   
+   public void Palindrome()
+   {
+      LlNode crnN = head.GetNext();
+       
+   
+   }
+   
+   public void Intersection()
+   {
+      LlNode crnN = head.GetNext();
+       
+   
+   }
+   
+   public void LoopDetection()
+   {
+      LlNode crnN = head.GetNext();
+       
+   
+   }
 }
