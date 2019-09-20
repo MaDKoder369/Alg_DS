@@ -24,5 +24,10 @@ public class StackTest
         System.out.println(s.Pop() + " Popped from stack");
         System.out.println(s.Pop() + " Popped from stack");
         System.out.println(s.Pop() + " Popped from stack"); 
+        
+        Stack ss = new Stack(11);
+        ss.Push(10); 
+        ss.Push(20); 
+        System.out.println(ss.Size() + " Size from stack"); 
     }
 }

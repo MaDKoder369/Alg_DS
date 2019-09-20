@@ -6,15 +6,22 @@ package vik.projects.ds;
  */
 public class Stack 
 {
-   private int[] Storage;
-   private int Cur;
-   static int MAX;
-
-   public void Stack( int size )
+   int MAX;
+   int Cur;
+   int Storage[];
+   
+   public Stack()
    {
-      int[] Storage = new int[size];
-      MAX = size -1;
-      Cur = -1;
+       MAX = 1000;
+       Cur = -1;
+       Storage = new int[MAX];
+   }
+   
+   public Stack( int size)
+   {
+       MAX = size - 1;
+       Cur = -1;
+       Storage = new int[size];
    }
 
    public boolean Push(int val)
@@ -46,6 +53,11 @@ public class Stack
    public int Top()
    {
        return Storage[Cur];
+   }
+   
+   public int Size()
+   {
+       return Cur+1;
    }
    
    public boolean isEmpty()
