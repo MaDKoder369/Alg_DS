@@ -6,6 +6,7 @@ vik\projects\ds\LlNode.class
 vik\projects\tasks\CCI.class
 vik\projects\ds\App.class
 vik\projects\ds\BDLList.class
+vik\projects\ds\Stack.class
 vik\projects\ds\BDNode.class
 vik\projects\alg\StrUtl.class
 vik\projects\alg\ArrUtl.class
