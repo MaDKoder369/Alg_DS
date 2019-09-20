@@ -11,7 +11,7 @@ public class StrUtlTest
 {
     @Test
     public void main()
-    {
+    {  /*
         // assertTrue will fail if the checked value is false, and assertFalse will do the opposite: fail if the checked value is true. 
         
         
@@ -20,7 +20,7 @@ public class StrUtlTest
         String testString = "This Is Test";
         assertTrue( StrUtl.AllUniqChr(testString) );
         
-        /*
+        
         if( StrUtl.AllUniqChr(testString) )
         {
            System.out.println("return true \n");
@@ -28,7 +28,7 @@ public class StrUtlTest
         else
         {
            System.out.println("return false \n");
-        }    just for checking */       
+        }    just for checking      
         
         System.out.println("TEST STRING PERMUTATION\n");
 
@@ -55,7 +55,7 @@ public class StrUtlTest
         System.out.println("TEST COMPRESSSTR\n");
         String testString4 = "aabcccccaaa";
         StrUtl.CompressStr(testString4);
-        
+        */
 
     }
 }

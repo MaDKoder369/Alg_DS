@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: vik.projects.alg.ArrUtlTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.054 s - in vik.projects.alg.ArrUtlTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.058 s - in vik.projects.alg.ArrUtlTest
