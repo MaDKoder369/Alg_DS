@@ -107,6 +107,22 @@ public class BDLList
       tmp.SetPrev( crn );
       IncSize();
    }
+   
+   public void Append(Object data)
+   {
+      if(head == null)
+      {
+         head = new BDNode(data);
+      }
+
+      BDNode Ntmp = new BDNode(data);
+      BDNode crnN = head;
+      
+      Ntmp.SetNext(crnN.GetNext() );
+      crnN.SetNext(Ntmp);
+      
+      IncSize();
+   }
 
    public boolean remove(int Indx)
    {//System.out.println("method: remove");

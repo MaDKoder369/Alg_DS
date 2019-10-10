@@ -17,7 +17,7 @@ public class BDJLlTest
       
       BDLList myexp = new BDLList();
       myexp.add("1");
-      myexp.add("2");
+      myexp.add("23");
     //  myexp.display();
       myexp.AddIndx("15",2);
       myexp.add("7");
@@ -25,7 +25,11 @@ public class BDJLlTest
      // myexp.display();
       
       myexp.remove(4);
-     // myexp.display(); 
+      myexp.Append("34");
+      myexp.Append("324");
+      myexp.Append("5434");
+      myexp.display();
+      
       
       
       System.out.println("Test BDLList Palindrom Started");

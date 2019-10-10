@@ -11,19 +11,22 @@ public class JLlTest
    @Test
    public void main()
    {
-      //System.out.println("Test JLlTest Started");
+      System.out.println("Test JLlTest Started");
       
       LList myexp = new LList();
-    /*  myexp.add("1");
+      myexp.Append("11");
       myexp.add("2");
-      myexp.display();
+      //myexp.display();
       myexp.AddIndx("15",2);
       myexp.display();
       
-      myexp.remove(4);
-      myexp.display(); */
+      //myexp.remove(4);
+      myexp.Append("34");
+      myexp.Append("324");
+      myexp.Append("5434");
+      myexp.display();
       
-      //System.out.println("Test JLlTest Ended");
+      System.out.println("Test JLlTest Ended");
    }
 
 }

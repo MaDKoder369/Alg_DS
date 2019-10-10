@@ -9,8 +9,7 @@ import java.util.HashSet;
 
 public class LList
 {
-	private LlNode head;
-
+   private LlNode head;
    private static int size;
 
    // Default constructor
@@ -32,6 +31,55 @@ public class LList
    public void DecSize() 
    {
       size--;
+   }
+
+   public Object get(int Indx) 
+   { //System.out.println("method: get");
+       if(Indx < 0)
+       {
+          return null;
+       }
+
+       LlNode crnN = null;
+
+       if(head != null)
+       {
+           crnN = head.GetNext();
+
+           for(int i=0; i<Indx; i++)
+           {
+               if(crnN.GetNext() == null)
+               {
+                  return null;
+               }
+
+               crnN = crnN.GetNext();
+           }
+
+          return crnN.GetData();
+       }
+
+       return crnN;
+   }
+
+   public void AddIndx(Object data, int Indx)
+   {//System.out.println("method: AddIndx");
+
+      LlNode tmp = new LlNode(data);
+      LlNode crn = head;
+
+      if(crn != null)
+      {
+
+         for(int i = 0; i < Indx && crn.GetNext() != null; i++)
+         {
+            crn = crn.GetNext();
+         }
+      }
+
+      tmp.SetNext(crn.GetNext());
+      crn.SetNext(tmp);
+      IncSize();
    }
 
    public void add(Object data) 
@@ -56,52 +104,19 @@ public class LList
       }
    }
 
-   public Object get(int Indx) 
-   { //System.out.println("method: get");
-       if(Indx < 0)
-       {
-          return null;
-       }
-
-       LlNode crnN = null;
-
-       if(head!=null)
-       {
-           crnN = head.GetNext();
-
-           for(int i=0; i<Indx; i++)
-           {
-               if(crnN.GetNext()==null)
-               {
-                  return null;
-               }
-
-               crnN = crnN.GetNext();
-           }
-
-          return crnN.GetData();
-       }
-
-        return crnN;
-   }
-
-   public void AddIndx(Object data, int Indx)
-   {//System.out.println("method: AddIndx");
-
-      LlNode tmp = new LlNode(data);
-      LlNode crn = head;
-
-      if(crn != null)
+   public void Append(Object data)
+   {
+      if(head == null)
       {
-
-         for(int i = 0; i < Indx && crn.GetNext() != null; i++)
-         {
-            crn = crn.GetNext();
-         }
+         head = new LlNode(data);
       }
 
-      tmp.SetNext(crn.GetNext());
-      crn.SetNext(tmp);
+      LlNode Ntmp = new LlNode(data);
+      LlNode crnN = head;
+      
+      Ntmp.SetNext(crnN.GetNext() );
+      crnN.SetNext(Ntmp);
+      
       IncSize();
    }
 
